@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="screen">
+
+    <div class="controle">
+        <h2 class="titulo">Radius-previewer</h2>
+        <label for="top-left">top-left</label>
+        <input type="range" min="0" max="100" value="10" id="top-left">
+
+        <label for="top-right">top-right</label>
+        <input type="range" min="0" max="100" value="0" id="top-right">
+
+        <label for="bottom-left">bottom-left</label>
+        <input type="range" min="0" max="100" value="0" id="bottom-left">
+
+        <label for="bottom-right">bottom-right</label>
+        <input type="range" min="0" max="100" value="0" id="bottom-right">
+
+        <div class="color-container">
+            <input type="color" class="color color-radius">
+            <input type="color" class="color color-border">
+        </div>
+
+
+    </div>
+
+    <div class="elemento">
+        <span></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
