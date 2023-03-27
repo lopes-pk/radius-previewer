@@ -14,7 +14,7 @@
     <div class="controle">
         <h2 class="titulo">Radius-previewer</h2>
         <label for="top-left">top-left</label>
-        <input type="range" min="0" max="100" value="10" id="top-left">
+        <input type="range" min="0" max="100" value="0" id="top-left">
 
         <label for="top-right">top-right</label>
         <input type="range" min="0" max="100" value="0" id="top-right">
@@ -30,12 +30,14 @@
             <input type="color" class="color color-border">
         </div>
 
-
     </div>
 
-    <div class="elemento">
-        <span></span>
+    <div class="elemento-propiedades">
+        <div class="elemento"></div>
+        <textarea class="propiedades" disabled value="a"></textarea>
+        <button id="btn-copiar"></button>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
