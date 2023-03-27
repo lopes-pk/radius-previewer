@@ -20,9 +20,9 @@
 .controle {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.701);
+    background-color: rgba(0, 0, 0, 0.802);
     padding: 40px;
-    border-radius: 50px;
+    border-radius: 8px;
 }
 
 .titulo {
@@ -36,9 +36,11 @@
 }
 
 .color-container {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
+    gap:10px;
 }
 
 .color {
@@ -52,6 +54,9 @@
     align-items: center;
     flex-direction: column;
     gap:20px;
+    /* background-color: rgba(0, 0, 0, 0.802);
+    padding: 20px; */
+    border-radius: 4px;
 }
 .elemento {
 
@@ -64,17 +69,35 @@
 
 .propiedades{
     display: inline-block;
-    width: 280px;
-    height: 60px;
+    width: 20vw;
+    height: 8vh;
     border-radius:20px;
     background-color:rgba(163, 162, 162, 0.932);
     border:none;
-    padding:15% 3% 0 3%;
+    padding:13% 3% 0 3%;
     text-align: center;
     font-size:13px;
+    resize: none;
 }
 
 #btn-copiar{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    background:url(./images/colar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    opacity: 1;
+    filter: brightness(1);
+}
+
+#btn-copiar:hover{
+    transform: scale(1.02);
+    filter: brightness(1.40);
+}
+
+#btn-copiar:active{
+    transform: scale(1);
+   opacity: 1;
+   filter: brightness(1);
 }

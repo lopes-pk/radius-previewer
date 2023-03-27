@@ -70,9 +70,7 @@ const corBorder = () => {
 colorRadius.addEventListener('input', corRadius)
 colorBorder.addEventListener('input', corBorder)
 
-btnCopiar.addEventListener('click', copiar)
+btnCopiar.addEventListener('click', function(){
+  navigator.clipboard.writeText(propiedadesElemento.innerHTML)
+})
 
-function copiar () {
-   propiedadesElemento.select()
-   propiedadesElemento.execCommand("copy")
-} 
