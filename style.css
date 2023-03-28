@@ -61,18 +61,21 @@
 }
 
 .elemento {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(33, 29, 29);
     border: 10px solid black;
     width: 150px;
     height: 150px;
+
 
 }
 
 .propiedades {
     display: inline-block;
     width: 300px;
-    height: 12vh;
+    height: 80px;
     border-radius: 20px;
     background-color: rgba(163, 162, 162, 0.932);
     border: none;
@@ -107,35 +110,29 @@
 }
 
 @media screen and (max-width:713px) {
-   
+
     #screen {
         display: flex;
         flex-direction: column;
         height: 130vh;
         overflow-x: hidden;
-       
+
     }
 
-    /* .propiedades {
-        width: 300px;
-    } */
-    .color-container{
+    .color-container {
         position: absolute;
-        top:50px;
-        gap:220px;
+        top: 50px;
+        gap: 220px;
     }
-    .color{
+
+    .color {
         width: 40px;
     }
-    #btn-copiar {
-        position: absolute;
-        bottom: 164px;
-        opacity: 0.6;
-    }
-    
+
 }
+
 @media screen and (max-height:600px) {
-    .propiedades{
+    .propiedades {
         line-height: 70px;
     }
 }
